@@ -12,5 +12,9 @@ return {
             label = 'Motels',
             coords = vec4(327.56, -205.08, 53.08, 163.5),
         },
+        {
+            label = 'Police Department',
+            coords = vec4(428.23, -984.28, 29.76, 3.5)
+        }
     }
 }
