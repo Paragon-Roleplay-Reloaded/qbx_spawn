@@ -16,8 +16,7 @@ lib.callback.register('qbx_spawn:server:getProperties', function(source)
 
     local player = exports.qbx_core:GetPlayer(source)
     local houseData = {}
-    local properties = MySQL.query.await('SELECT id, property_name, coords FROM properties WHERE owner = ?',
-        { player.PlayerData.citizenid })
+    local properties = MySQL.query.await('SELECT id, property_name, coords FROM properties WHERE owner = ?', { player.PlayerData.citizenid })
 
     for i = 1, #properties do
         local property = properties[i]
