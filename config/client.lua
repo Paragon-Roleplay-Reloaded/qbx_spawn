@@ -15,6 +15,10 @@ return {
         {
             label = 'Police Department',
             coords = vec4(428.23, -984.28, 29.76, 3.5)
+        },
+        {
+            label = 'Personal Home',
+            coords = vec4(-2013.78, 541.11, 110.25, 160.14)
         }
     }
 }

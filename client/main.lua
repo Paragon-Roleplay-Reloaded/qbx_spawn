@@ -225,7 +225,8 @@ local function inputHandler()
             if spawnData.propertyId then
                 TriggerServerEvent('qbx_properties:server:enterProperty', { id = spawnData.propertyId, isSpawn = true })
             else
-                SetEntityCoords(cache.ped, spawnData.coords.x, spawnData.coords.y, spawnData.coords.z, false, false, false, false)
+                SetEntityCoords(cache.ped, spawnData.coords.x, spawnData.coords.y, spawnData.coords.z, false, false,
+                    false, false)
                 SetEntityHeading(cache.ped, spawnData.coords.w or 0.0)
             end
 
